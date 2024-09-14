@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { CommandBox } from "@/components/CommandBox";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,12 +17,22 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "DuskUI - Animated React Component Library",
-  description: "Open-source UI component library for Next.js and React with animated and customizable components.",
-  keywords: ["React", "Next.js", "UI library", "components", "animated", "customizable", "open-source"],
+  description:
+    "Open-source UI component library for Next.js and React with animated and customizable components.",
+  keywords: [
+    "React",
+    "Next.js",
+    "UI library",
+    "components",
+    "animated",
+    "customizable",
+    "open-source",
+  ],
   authors: [{ name: "DuskUI Team" }],
   openGraph: {
     title: "DuskUI - Animated React Component Library",
-    description: "Open-source UI component library for Next.js and React with animated and customizable components.",
+    description:
+      "Open-source UI component library for Next.js and React with animated and customizable components.",
     type: "website",
     url: "https://duskui.com",
     images: [
@@ -35,7 +47,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "DuskUI - Animated React Component Library",
-    description: "Open-source UI component library for Next.js and React with animated and customizable components.",
+    description:
+      "Open-source UI component library for Next.js and React with animated and customizable components.",
     images: ["https://duskui.com/twitter-image.png"],
   },
   viewport: "width=device-width, initial-scale=1",
@@ -52,7 +65,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          {children}
+          <CommandBox />
+        </ThemeProvider>
       </body>
     </html>
   );
