@@ -1,23 +1,10 @@
 "use client";
 
 import {
-  CalendarIcon,
-  EnvelopeClosedIcon,
-  FaceIcon,
-  GearIcon,
-  PersonIcon,
-  RocketIcon,
-} from "@radix-ui/react-icons";
-
-import {
   Command,
   CommandEmpty,
-  CommandGroup,
   CommandInput,
-  CommandItem,
   CommandList,
-  CommandSeparator,
-  CommandShortcut,
 } from "@/components/ui/command";
 import { Dialog, DialogContent } from "./ui/dialog";
 import { useEffect, useState } from "react";
@@ -41,7 +28,7 @@ export function CommandBox() {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent enableCross={false} className="p-0">
         <Command className="rounded-lg border shadow-md md:min-w-[450px]">
-          <CommandInput placeholder="Type a command or search..." />
+          <CommandInput placeholder="Search any component or page..." />
           <CommandList>
             <CommandEmpty>No results found.</CommandEmpty>
             {/* <CommandGroup heading="Suggestions">
