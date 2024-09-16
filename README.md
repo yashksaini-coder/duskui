@@ -38,3 +38,15 @@ Need custom components or integrations? We offer paid development services. Cont
 ## License
 
 DuskUI is open source software [licensed as MIT](LICENSE).
+
+## Ideas
+- [ ] Page Transition Animations (blur, scale up, scale down, left to right, right to left, top to bottom, bottom to top)
+- [ ] Hacker typewriter effect
+- [ ] Matrix BG Effect
+- [ ] Blur Text Reveal effect
+- [ ] Simple Text Reveal effect
+- [ ] Modified Shadcn Button
+- [ ] Animating Shifting Layout Component
+- [ ] Blob BG Animated Effect
+- [ ] SVG Icon Animation
+- [ ] More Coming Soon    
