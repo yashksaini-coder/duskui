@@ -14,8 +14,7 @@ export default function Header() {
           Components
         </Link>
         <div className="">
-        <Input/>
-
+          <Input placeholder="Search UI components"/>
         </div>
       </div>
     </div>
