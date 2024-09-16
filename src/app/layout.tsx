@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { CommandBox } from "@/components/CommandBox";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
 
@@ -69,7 +68,6 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
           {children}
-          <CommandBox />
         </ThemeProvider>
       </body>
     </html>
