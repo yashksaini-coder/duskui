@@ -11,10 +11,9 @@ import {
   CommandEmpty,
   CommandGroup,
   CommandInput,
-  CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { RiPuzzleFill } from "react-icons/ri";
+// import { RiPuzzleFill } from "react-icons/ri";
 
 export default function Header() {
   const [open, setOpen] = useState<boolean>(false);
